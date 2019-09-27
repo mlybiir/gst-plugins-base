@@ -811,11 +811,6 @@ gst_alsasrc_prepare (GstAudioSrc * asrc, GstAudioRingBufferSpec * spec)
     snd_output_close (out_buf);
   }
 
-#ifdef SND_CHMAP_API_VERSION
-  alsa_detect_channels_mapping (GST_OBJECT (alsa), alsa->handle, spec,
-      alsa->channels, GST_AUDIO_BASE_SRC (alsa)->ringbuffer);
-#endif /* SND_CHMAP_API_VERSION */
-
   return TRUE;
 
   /* ERRORS */
