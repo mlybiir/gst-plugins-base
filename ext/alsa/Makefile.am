@@ -5,7 +5,6 @@ libgstalsa_la_SOURCES = \
 	gstalsaplugin.c \
 	gstalsasink.c 	\
 	gstalsasrc.c \
-	gstalsamidisrc.c \
 	gstalsa.c
 
 libgstalsa_la_CFLAGS = \
@@ -24,5 +23,4 @@ noinst_HEADERS = \
 	gstalsa.h \
 	gstalsadeviceprovider.h \
 	gstalsasrc.h \
-	gstalsasink.h \
-	gstalsamidisrc.h
+	gstalsasink.h
